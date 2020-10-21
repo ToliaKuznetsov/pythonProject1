@@ -1,5 +1,5 @@
 import turtle
-turtle.speed(10)
+turtle.speed(5)
 
 
 def square(x, y, a, angle, color):
@@ -8,7 +8,7 @@ def square(x, y, a, angle, color):
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: side length of a square
-    :param angle: rotation angle of a square
+    :param angle: rotation angle of a square (counterclockwise)
     :param color: color of a square
     :return: None
     '''
@@ -33,7 +33,6 @@ def main():
     Main function.
     :return: None
     '''
-    square(20, -20, 180, 30, 'blue')
     turtle.done()
 
 
