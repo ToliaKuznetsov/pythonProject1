@@ -1,8 +1,8 @@
-
 import turtle
 
+
 def parallelogram(x, y, a, b, c, r):
-    '''
+    """
     Function, drawing parallelogram.
     :param x: upper  obtuse angle coordinate x
     :param y: upper obtuse angle coordinate y
@@ -10,7 +10,7 @@ def parallelogram(x, y, a, b, c, r):
     :param b: short side of the parallelogram
     :param c: color
     :param r: degree of rotation relative OX
-    '''
+    """
     turtle.penup()
     turtle.color(c)
     turtle.setposition(x, y)
@@ -25,5 +25,3 @@ def parallelogram(x, y, a, b, c, r):
     turtle.forward(b)
     turtle.right(45)
     turtle.right(r)
-
-
