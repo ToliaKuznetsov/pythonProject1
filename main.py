@@ -1,20 +1,23 @@
 import turtle
-turtle.speed(100000)
+turtle.speed(10)
 
 
-def square(x, y, a, c):
+def square(x, y, a, angle, color):
     '''
     Function, drawing square.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: side length of a square
+    :param angle: rotation angle of a square
+    :param color: color of a square
     :return: None
     '''
     turtle.up()
-    turtle.color(c)
     turtle.setposition(x, y)
+    turtle.setheading(angle)
+    turtle.color(color)
     turtle.down()
-    turtle.fill(1)
+    turtle.begin_fill()
     turtle.forward(a)
     turtle.right(90)
     turtle.forward(a)
@@ -23,17 +26,14 @@ def square(x, y, a, c):
     turtle.right(90)
     turtle.forward(a)
     turtle.right(90)
-    turtle.fill(0)
+    turtle.end_fill()
 
 def main():
     '''
     Main function.
     :return: None
     '''
-    square(-200, 200, 180, 'blue')
-    square(20, 200, 180, 'blue')
-    square(20, -20, 180, 'blue')
-    square(-200, -20, 180, 'blue')
+    square(20, -20, 180, 30, 'blue')
     turtle.done()
 
 
