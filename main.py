@@ -27,3 +27,4 @@ def parallelogram(x, y, a, b, c, r):
     turtle.right(r)
 dfghjkl
 sdfghjk
+23456789
