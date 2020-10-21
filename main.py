@@ -1,5 +1,4 @@
 import turtle
-turtle.speed(5)
 
 
 def square(x, y, a, angle, color):
@@ -14,7 +13,7 @@ def square(x, y, a, angle, color):
     '''
     turtle.up()
     turtle.setposition(x, y)
-    turtle.setheading(angle)
+    turtle.left(angle)
     turtle.color(color)
     turtle.down()
     turtle.begin_fill()
@@ -27,6 +26,7 @@ def square(x, y, a, angle, color):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
+    turtle.right(angle)
 
 def main():
     '''
