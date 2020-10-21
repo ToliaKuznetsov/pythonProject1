@@ -25,3 +25,4 @@ def parallelogram(x, y, a, b, c, r):
     turtle.forward(b)
     turtle.right(45)
     turtle.right(r)
+dfghjkl
