@@ -29,6 +29,6 @@ turtle.forward(b)
 turtle.right(135)
 turtle.end_fill()
 def main():
-    triangle(1,2,10,20,0)
+    triangle(1,2,10,20,0,"red")
 
 turtle.mainloop()
