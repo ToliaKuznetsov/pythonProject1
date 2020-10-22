@@ -11,7 +11,7 @@ def triangle(x, y, a, b, ang, c):
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: short-side length of a triangle
-    :param b: long-side lenght of a triangle
+    :param b: long-side length of a triangle
     :param ang: rotation angle of a triangle
     :param c: color of a triangle
     :return: None
