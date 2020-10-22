@@ -20,18 +20,15 @@ turtle.setposition(x, y)
 turtle.setheading(ang)
 turtle.down()
 turtle.color(c)
-
+turtle.begin_fill()
 turtle.forward(a)
 turtle.right(90)
 turtle.forward(a)
 turtle.right(135)
 turtle.forward(b)
 turtle.right(135)
-
+turtle.end_fill()
 def main():
     triangle(1,2,10,20,0)
 
-turtle.done()
-
-if __name__ == '__main__':
-    main()
+turtle.mainloop()
