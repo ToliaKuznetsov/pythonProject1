@@ -5,8 +5,8 @@
 import turtle
 def square(x, y, a, ang, c):
 
-    """
-    Function, drawing square.
+    '''
+    :return: Function, drawing triangle.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: short-side length of a triangle
@@ -14,7 +14,7 @@ def square(x, y, a, ang, c):
     :param ang: rotation angle of a triangle
     :param c: color of a triangle
     :return: None
-    """
+    '''
 
 turtle.up()
 turtle.setposition(x, y)
@@ -27,15 +27,6 @@ turtle.right(135)
 turtle.forward(b)
 turtle.right(135)
 
-
-
-
-def main():
-    '''
-    Main function.
-    :return: None
-    '''
-triangle(100, 100, 90,0, "red" )
 turtle.mainloop()
 
 if __name__ == '__main__':
