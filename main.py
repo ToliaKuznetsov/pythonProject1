@@ -3,28 +3,6 @@
 #               Petrova S. (60%),
 #               Sidorov M. (30%)
 import turtle
-from turtle import *
-
-def square(x, y, a):
-    '''
-    Function, drawing square.
-    :param x: upper left corner coordinate x
-    :param y: upper left corner coordinate y
-    :param a: side length of a square
-    :return: None
-    '''
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-
 
 def triangle(x, y, a, b, ang, c):
     '''
@@ -49,16 +27,6 @@ turtle.forward(a)
 turtle.right(120)
 
 
-
-
-def parallelogram(x, y, a):
-    '''
-    Function, drawing square.
-    :param x: upper left corner coordinate x
-    :param y: upper left corner coordinate y
-    :param a: side length of a square
-    :return: None
-    '''
 
 
 def main():
