@@ -1,13 +1,14 @@
-# Case-study #1
-# Developers:   Ivanov A. (20%),
-#               Petrova S. (60%),
-#               Sidorov M. (30%)
 import turtle
+
 def triangle(x, y, a, b, ang, c):
     '''
-    Function, drawing triangle.
+    Function, drawing square.
+    :return: Function, drawing triangle.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
+    :param a: side length of a square
+    :param angle: rotation angle of a square (counterclockwise)
+    :param color: color of a square
     :param a: short-side length of a triangle
     :param b: long-side lenght of a triangle
     :param ang: rotation angle of a triangle
@@ -16,6 +17,8 @@ def triangle(x, y, a, b, ang, c):
     '''
     turtle.up()
     turtle.setposition(x, y)
+    turtle.left(angle)
+    turtle.color(color)
     turtle.setheading(ang)
     turtle.down()
     turtle.color(c)
@@ -23,15 +26,27 @@ def triangle(x, y, a, b, ang, c):
     turtle.forward(a)
     turtle.right(90)
     turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
     turtle.right(135)
     turtle.forward(b)
     turtle.right(135)
     turtle.end_fill()
+    turtle.right(angle)
+
 
 def main():
-         triangle(1, 2, 10, 20, 0,"red")
+    '''
+    Main function.
+    :return: None
+    '''
+    turtle.done()
 
-turtle.mainloop()
+    triangle(0, 0, 80, 80, 45, 'red')
+
 
 if __name__ == '__main__':
     main()
