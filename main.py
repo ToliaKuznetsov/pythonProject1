@@ -3,7 +3,7 @@
 #               Petrova S. (60%),
 #               Sidorov M. (30%)
 import turtle
-
+def triangle (x, y, a, b, ang, c)
     '''
     :return: Function, drawing triangle.
     :param x: upper left corner coordinate x
@@ -13,7 +13,7 @@ import turtle
     :param ang: rotation angle of a triangle
     :param c: color of a triangle
     :return: None
-   '''
+    '''
 turtle.up()
 turtle.setposition(x, y)
 turtle.setheading(ang)
@@ -31,3 +31,6 @@ def main():
     triangle(1,2,10,20,0,"red")
 
 turtle.mainloop()
+
+if_name_=='_main_':
+main()
