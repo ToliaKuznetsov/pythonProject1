@@ -3,10 +3,9 @@
 #               Petrova S. (60%),
 #               Sidorov M. (30%)
 import turtle
+def triangle(x, y, a, b, ang, c ):
 
-def triangle(x, y, a, b, ang, c):
-
-    ''
+    """
     Function, drawing triangle.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
@@ -15,7 +14,7 @@ def triangle(x, y, a, b, ang, c):
     :param ang: angle of a triangle
     :param c: color of a triangle
     :return: None
-    ''
+    """
 
 turtle.up()
 turtle.setposition(x, y)
