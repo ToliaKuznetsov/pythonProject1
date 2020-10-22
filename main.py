@@ -3,7 +3,7 @@
 #               Petrova S. (60%),
 #               Sidorov M. (30%)
 import turtle
-def triangle (x, y, a, b, ang, c)
+def triangle(x, y, a, b, ang, c)
     '''
     :return: Function, drawing triangle.
     :param x: upper left corner coordinate x
@@ -32,5 +32,5 @@ def main():
 
 turtle.mainloop()
 
-if_name_=='_main_':
-main()
+if __name__ == '__main__':
+    main()
