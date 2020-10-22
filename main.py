@@ -3,15 +3,15 @@
 #               Petrova S. (60%),
 #               Sidorov M. (30%)
 import turtle
-def triangle(x, y, a, b, ang, c ):
+def square(x, y, a, ang, c):
 
     """
-    Function, drawing triangle.
+    Function, drawing square.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
-    :param a:long side length of a triangle
-    :param b:short side length of a triangle
-    :param ang: angle of a triangle
+    :param a: short-side length of a triangle
+    :param b: long-side lenght of a triangle
+    :param ang: rotation angle of a triangle
     :param c: color of a triangle
     :return: None
     """
@@ -20,13 +20,12 @@ turtle.up()
 turtle.setposition(x, y)
 turtle.setheading(ang)
 turtle.down()
-turtle
-turtle.forward(b)
-turtle.right(90)
-turtle.forward(b)
-turtle.right()
 turtle.forward(a)
-turtle.right(120)
+turtle.right(90)
+turtle.forward(a)
+turtle.right(135)
+turtle.forward(b)
+turtle.right(135)
 
 
 
@@ -36,7 +35,7 @@ def main():
     Main function.
     :return: None
     '''
-triangle(100, 100, 90)
+triangle(100, 100, 90,0, "red" )
 turtle.mainloop()
 
 if __name__ == '__main__':
