@@ -89,7 +89,7 @@ def parallelogram(x, y, a, b, r, c):
     turtle.end_fill()
     turtle.right(r)
 
-def hui():
+def hei():
     """
     Function, drawing rabbit.
     Tolian
@@ -121,7 +121,7 @@ def main():
     Main function.
     :return: None
     """
-    hui()
+    hei()
     hai()
     turtle.done()
 
