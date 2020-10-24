@@ -3,6 +3,7 @@
 #               Kuznetsov A. (0%),
 #               Krivoshapova D. (0%)
 import turtle
+
 turtle.screensize(1200, 800)
 
 
@@ -72,7 +73,7 @@ def triangle(x, y, a, ang, c):
     turtle.right(90)
     turtle.forward(a)
     turtle.right(135)
-    turtle.forward(a*2**.5)
+    turtle.forward(a * 2 ** .5)
     turtle.right(135)
     turtle.end_fill()
     turtle.right(ang)
@@ -105,33 +106,48 @@ def parallelogram(x, y, a, b, c, r):
     turtle.end_fill()
     turtle.right(r)
 
+
 def rabbit():
     """
     Function, drawing rabbit.
     TODO: Lapochkin D.
+    :return: None
+    """
+    square(10, 260, 50, 0, '#FF9A5E')
+    parallelogram(-15, 264, 70, 50, '#9CBF4E', 135)
+    triangle(6, 255, 100, -90, '#FF552B')
+    triangle(-94, 51, 100, 90, '#5BC78C')
+    triangle(-15, 124, 75, -90, '#9CBF4E')
+    triangle(39, 49, 50, 180, '#F2A0B6')
+    triangle(10, 184, 50, -45, '#CCCACF')
+
+
+def rooster():
+    """
+    Function, drawing rooster.
+    TODO: Lapochkin D.
     :return:
     """
-    square(0, 270, 50, 0, '#E6CE20')
-    parallelogram(-25, 274, 70, 50, '#5BC78C', 135)
-    triangle(-4, 245, 100, -90, '#FF552B')
-    triangle(-104, 41, 100, 90, '#5BC78C')
-    triangle(-25, 114, 75, -90, '#5BC78C')
-    triangle(29, 39, 50, 180, '#5BC78C')
-    triangle(0, 174, 50, -45, '#5BC78C')
+    square(35, -115, 50, 0, '#F2EC91')
+    triangle(35, -111, 45, 45, '#F2785C')
+    triangle(-15, -269, 100, 90, '#9FAABF')
+    triangle(60, -269, 50, 135, '#F2A0B6')
+    triangle(-119, -109, 100, 0, '#FF552B')
+    triangle(-119, -105, 71, 45, '#D9ADC5')
+    parallelogram(-95, -138, 71, 35, '#9CBF4E', -90)
+
 
 def main():
     """
     Main function.
     :return: None
     """
-    turtle.speed(100)
+    turtle.speed(20)
     boarders()
-    turtle.speed(5)
     rabbit()
-    square(0, -100, 50, 0, '#5BC78C')
+    rooster()
+    turtle.done()
 
 
 if __name__ == '__main__':
     main()
-
-turtle.done()
