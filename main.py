@@ -96,12 +96,7 @@ def rabbit():
     :return: None
     """
     square(10, 260, 50, 0, '#FF9A5E')
-    parallelogram(-15, 264, 70, 50, 135, '#9CBF4E')
-    triangle(6, 255, 100, -90, '#FF552B')
-    triangle(-94, 51, 100, 90, '#5BC78C')
-    triangle(-15, 124, 75, -90, '#9CBF4E')
-    triangle(39, 49, 50, 180, '#F2A0B6')
-    triangle(10, 184, 50, -45, '#CCCACF')
+
 
 def main():
     """
@@ -112,4 +107,4 @@ def main():
     turtle.done()
 
 if __name__ == '__main__':
-main()
+    main()
