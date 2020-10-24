@@ -102,3 +102,14 @@ def parallelogram(x, y, a, b, r, c):
         triangle(-15, 124, 75, -90, '#9CBF4E')
         triangle(39, 49, 50, 180, '#F2A0B6')
         triangle(10, 184, 50, -45, '#CCCACF')
+
+def main():
+    """
+    Main function.
+    :return: None
+    """
+    rabbit()
+    turtle.done()
+
+if __name__ == '__main__':
+main()
