@@ -1,4 +1,5 @@
 import turtle
+turtle.setup(1200,800)
 
 
 def parallelogram(x, y, a, b, c, r):
@@ -113,20 +114,21 @@ def rocket():
     Function, drawing rocket.
     :return: None
     """
-    square(10, 260, 50, 0, '#FF9A5E')
-    parallelogram(-15, 264, 70, 50, 135, '#9CBF4E')
-    triangle(6, 255, 100, -90, '#FF552B')
-    triangle(-94, 51, 100, 90, '#5BC78C')
-    triangle(-15, 124, 75, -90, '#9CBF4E')
-    triangle(39, 49, 50, 180, '#F2A0B6')
-    triangle(10, 184, 50, -45, '#CCCACF')
+    triangle(-500, -10, 50, 45, '#CCCACF')
+    triangle(-502, -14, 75, 0, '#9CBF4E')
+    triangle(-502, -20, 100, -45, '#FF552B')
+    triangle(-426, -233, 100, 135, '#5BC78C')
+    square(-535, -200, 50, 45, '#FF9A5E')
+    parallelogram(-422, -234, 70, 50, 90, '#9CBF4E')
+    triangle(-538,-203, 50, -45, '#F2A0B6')
+
 
 def main():
     """
     Main function.
     :return: None
     """
-    rabbit()
+    rocket()
 
     turtle.done()
 
