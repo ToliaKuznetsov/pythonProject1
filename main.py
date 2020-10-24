@@ -114,8 +114,8 @@ def hai():
     parallelogram(376, -148, 58, 44, 225, '#9CBF4E')
     triangle(406, -169, 85, 270, '#FFFF00')
     triangle(410, -220, 60, 315, '#00B2EE')
-    triangle(406, -340, 44, 135, '#9B30FF')
-    triangle(282, -288, 44, 90, '#912CEE')
+    triangle(406, -340, 44, 135, '#912CEE')
+    triangle(282, -288, 44, 90, '#7D26CD')
 def main():
     """
     Main function.
